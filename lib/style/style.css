@@ -9,26 +9,19 @@
   display: flex;
 }
 
-/* regole menu di navigazione */
-
-nav {
-  width: 230px;
-  border: solid 1px black;
-  background-color: darkred;
-  height: calc(100vh - 90px);
-  position: fixed;
-  left: 0;
-  z-index: 99;
-}
-
-
 /* regole contenuto principale */
-.main-container {
-  border: solid 1px black;
-  background-color: darkgreen;
-  height: calc(100vh - 90px);
-  width: 100%;
-}
+
+  /* regole menu di navigazione */
+  nav {
+    width: 230px;
+    border: solid 1px black;
+    background-color: darkred;
+    height: calc(100vh - 90px);
+    position: fixed;
+    left: 0;
+    z-index: 99;
+  }
+
 
   /* parte call to action */
   .call-to-action {
@@ -42,14 +35,24 @@ nav {
   }
 
 
-/* regole player */
+  /* sezione cover */
+  #cover {
+    border: solid 1px black;
+    background-color: darkgreen;
+    height: calc(100vh - 90px);
+    width: calc(100% - 230px);
+    margin-left: 230px;
+  }
 
-.player {
-  height: 90px;
-  border: solid 1px black;
-  background-color: lightblue;
-  position: fixed;
-  left: 0;
-  z-index: 100;
-  width: 100%;
-}
+
+  /* regole player */
+
+  .player {
+    height: 90px;
+    border: solid 1px black;
+    background-color: lightblue;
+    position: fixed;
+    bottom: 0;
+    z-index: 100;
+    width: 100%;
+  }
