@@ -22,6 +22,18 @@
     z-index: 99;
   }
 
+  .flex-nav {
+    display: flex;
+    flex-direction: column;
+  }
+
+  .logo, .nav-menu, .playlist, .profile {
+    height: 150px;
+    border: solid 1px white;
+  }
+
+
+
 
   /* parte call to action */
   .call-to-action {
@@ -32,6 +44,14 @@
     top: 0;
     right: 0;
     width: calc(100% - 230px);
+    display: flex;
+    justify-content: flex-end;
+    align-items: center;
+  }
+
+  .call-to-action-button {
+    height: 50px;
+    border: solid 1px white;
   }
 
 
@@ -44,6 +64,32 @@
     margin-left: 230px;
   }
 
+  .cover-menu {
+    margin-top: 110px;
+  }
+
+  .cover-menu .nav {
+    display: flex;
+    list-style-type: none;
+    border: solid 1px white;
+  }
+
+  .cover-item {
+    border: solid 1px white;
+    height: 200px;
+  }
+
+  .cover-item ul {
+    display: flex;
+    list-style: none;
+  }
+
+  .cover-item ul li {
+    height: 50px;
+    width: 50px;
+    border: solid 1px black;
+    background-color: pink;
+  }
 
   /* regole player */
 
@@ -55,4 +101,17 @@
     bottom: 0;
     z-index: 100;
     width: 100%;
+  }
+
+  .flex-player {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    height: 100%;
+  }
+
+  .player-item {
+    border: solid 1px black;
+    height: 40px;
+    width: 200px;
   }
