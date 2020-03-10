@@ -1,17 +1,19 @@
-/* general */
+/* regole generali */
 * {
   padding: 0;
   margin: 0;
   box-sizing: border-box;
+  font-family: 'Montserrat', sans-serif;
 }
 
 .flex-container {
   display: flex;
 }
 
-/* regole contenuto principale */
+/******* regole contenuto principale ********/
 
-  /* regole menu di navigazione */
+
+  /* inizio regole menu di navigazione */
   nav {
     width: 230px;
     border: solid 1px black;
@@ -31,15 +33,13 @@
     height: 150px;
     border: solid 1px white;
   }
+  /* fine regole menu di navigazione */
 
 
-
-
-  /* parte call to action */
+  /* inizio regole parte call to action */
   .call-to-action {
     height: 90px;
-    border: solid 1px black;
-    background-color: darkgoldenrod;
+    background-color: rgba(0, 0, 0, .4);
     position: fixed;
     top: 0;
     right: 0;
@@ -50,12 +50,26 @@
   }
 
   .call-to-action-button {
-    height: 50px;
-    border: solid 1px white;
+    padding: 20px;
   }
 
+  .call-to-action-button:hover {
+    transform: scale(1.1);
+  }
 
-  /* sezione cover */
+  .call-to-action-button a {
+    color: #fff;
+    font-size: 12px;
+    text-decoration: none;
+    padding: 10px 40px;
+    border: solid 1px #fff;
+    border-radius: 20px;
+  }
+
+  /* fine regole parte call to action */
+
+
+  /* inizio regole sezione cover */
   #cover {
     border: solid 1px black;
     background-color: darkgreen;
@@ -90,8 +104,10 @@
     border: solid 1px black;
     background-color: pink;
   }
+  /* fine regole sezione cover */
 
-  /* regole player */
+
+  /* inizio regole player */
 
   .player {
     height: 90px;
@@ -115,3 +131,4 @@
     height: 40px;
     width: 200px;
   }
+  /* fine regole player */
