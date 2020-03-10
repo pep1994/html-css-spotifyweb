@@ -43,6 +43,7 @@
     position: fixed;
     top: 0;
     right: 0;
+    z-index: 100;
     width: calc(100% - 230px);
     display: flex;
     justify-content: flex-end;
@@ -71,9 +72,7 @@
 
   /* inizio regole sezione cover */
   #cover {
-    border: solid 1px black;
     background: #141922;
-    height: calc(100vh - 90px);
     width: calc(100% - 230px);
     margin-left: 230px;
     padding: 0 20px;
@@ -118,8 +117,7 @@
   }
 
   .cover-item {
-    border: solid 1px white;
-    margin-top: 20px;
+    margin-top: 30px;
   }
 
   .cover-item ul {
@@ -129,7 +127,7 @@
 
   .cover-item ul li {
     flex-basis: calc(100% / 6);
-    margin-right: 15px;
+    padding-right: 15px;
     cursor: pointer;
   }
 
@@ -139,7 +137,7 @@
   }
 
   .img-container img {
-    width: 100%;
+    max-width: 100%;
   }
 
   .cover-filter {
@@ -168,11 +166,16 @@
     margin-top: 10px;
   }
 
-  .cover-title h2 {
+   .cover-title h2 {
     font-size: 24px;
     color: #fff;
     font-weight: bold;
     margin-bottom: 30px;
+  }
+
+  .cover-item.second .cover-title h2,
+  .cover-item.third .cover-title h2{
+    margin-bottom: 10px;
   }
 
   .sing-title h3 {
@@ -180,11 +183,27 @@
     font-size: 16px;
   }
 
-  .sing-title h5 {
+  #cover h5 {
     color: rgba(255, 255, 255, .4);
     line-height: 30px;
+    margin-bottom: 30px;
   }
 
+  .cover-item.third .cover-sing {
+    margin-bottom: 120px;
+  }
+
+  .cover-item.third .img-container {
+    border-radius: 100%;
+  }
+
+  .cover-item.third .img-container .cover-filter {
+    border-radius: 100%;
+  }
+
+  .cover-item.third .img-container img {
+    border-radius: 100%;
+  }
 
   /* fine regole sezione cover */
 
