@@ -1,0 +1,55 @@
+/* general */
+* {
+  padding: 0;
+  margin: 0;
+  box-sizing: border-box;
+}
+
+.flex-container {
+  display: flex;
+}
+
+/* regole menu di navigazione */
+
+nav {
+  width: 230px;
+  border: solid 1px black;
+  background-color: darkred;
+  height: calc(100vh - 90px);
+  position: fixed;
+  left: 0;
+  z-index: 99;
+}
+
+
+/* regole contenuto principale */
+.main-container {
+  border: solid 1px black;
+  background-color: darkgreen;
+  height: calc(100vh - 90px);
+  width: 100%;
+}
+
+  /* parte call to action */
+  .call-to-action {
+    height: 90px;
+    border: solid 1px black;
+    background-color: darkgoldenrod;
+    position: fixed;
+    top: 0;
+    right: 0;
+    width: calc(100% - 230px);
+  }
+
+
+/* regole player */
+
+.player {
+  height: 90px;
+  border: solid 1px black;
+  background-color: lightblue;
+  position: fixed;
+  left: 0;
+  z-index: 100;
+  width: 100%;
+}
