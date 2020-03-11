@@ -380,8 +380,7 @@
 
   .player {
     height: 90px;
-    border: solid 1px black;
-    background-color: lightblue;
+    background-color: #282828;
     position: fixed;
     bottom: 0;
     right: 0;
@@ -398,7 +397,83 @@
 
   .player-item {
     border: solid 1px black;
-    height: 40px;
-    width: 200px;
+    height: 100%;
+    display: flex;
   }
+
+  .player-item.left {
+    padding: 10px;
+    align-items: center;
+    justify-content: space-around;
+    flex-basis: 230px;
+  }
+
+  .player-item.left .player-album-img {
+    flex-basis: 20%;
+  }
+
+  .player-item.left .player-album-title {
+    flex-basis: 50%;
+    padding-left: 10px;
+  }
+
+  .player-album-title h3 {
+    line-height: 10px;
+  }
+
+  .player-album-title h3 a {
+    font-size: 12px;
+    color: #fff;
+    text-decoration: none;
+  }
+
+  .player-album-title h3 a:hover {
+    text-decoration: underline;
+  }
+
+  .player-album-title h5 a {
+    font-size: 10px;
+    color: rgba(255, 255, 255, .4);
+    text-decoration: none;
+  }
+
+  .player-album-title h5 a:hover {
+    color: rgba(255, 255, 255, 1);
+    text-decoration: underline;
+  }
+
+  .player-item.left .player-album-icon {
+    flex-basis: 30%;
+    text-align: right;
+  }
+
+  .player-album-icon a {
+    color: rgba(255, 255, 255, .4);
+  }
+
+  .player-album-icon a:hover {
+    color: rgba(255, 255, 255, 1);
+  }
+
+  .player-album-icon a:last-child {
+    margin-left: 10px;
+  }
+
+  .player-item.left .player-album-img img {
+    width: 100%;
+  }
+
+  .player-item.center {
+    flex-basis: 40%;
+  }
+
+
+
+
+
+  .player-item.right {
+    flex-basis: 230px;
+  }
+
+
   /* fine regole player */
