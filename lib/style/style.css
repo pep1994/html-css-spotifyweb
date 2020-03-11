@@ -396,7 +396,6 @@
   }
 
   .player-item {
-    border: solid 1px black;
     height: 100%;
   }
 
@@ -539,13 +538,62 @@
     display: block;
   }
 
-
-
-
-
-
   .player-item.right {
     flex-basis: 230px;
+    padding: 10px;
+  }
+
+  .player-item.right ul {
+    list-style-type: none;
+    height: 100%;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+  }
+
+  .player-item.right ul i {
+    color: #fff;
+    font-size: 13px;
+  }
+
+  .big-lenght {
+    flex-basis: 55%;
+  }
+
+  .big-lenght .volume-bar {
+    height: 4px;
+    width: 100%;
+    background-color: rgba(255, 255, 255, .2);
+    border-radius: 5px;
+    cursor: pointer;
+  }
+
+  .volume-bar-progress {
+    width: 22%;
+    height: 4px;
+    background-color: rgba(255, 255, 255, .6);
+    border-radius: 5px;
+    position: relative;
+  }
+
+  .point-volume {
+    width: 13px;
+    height: 13px;
+    background-color: #fff;
+    border-radius: 100%;
+    position: absolute;
+    right: 0;
+    top: 50%;
+    transform: translatey(-50%);
+    display: none;
+  }
+
+  .big-lenght .volume-bar:hover .volume-bar-progress {
+    background-color: greenyellow;
+  }
+
+  .big-lenght .volume-bar:hover .point-volume {
+    display: block;
   }
 
 
