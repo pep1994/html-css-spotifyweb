@@ -35,7 +35,11 @@
     padding: 20px;
   }
 
-  .logo img {
+  .logo-small-container {
+    display: none;
+  }
+
+  .logo .logo-big {
     width: 70%;
   }
 
@@ -244,6 +248,9 @@
     width: calc(100% - 230px);
     margin-left: 230px;
     padding: 0 20px;
+    height: calc(100vh - 90px);
+    overflow: auto;
+
   }
 
   .cover-menu {
@@ -258,7 +265,8 @@
   }
 
   .cover-menu .nav li {
-    margin: 0 15px;
+    padding: 0 15px;
+
   }
 
   .cover-menu .nav a {
@@ -603,7 +611,7 @@
   }
   /* fine regole player */
 
-  /* media query */
+  /* media query md */
   @media screen and (max-width: 991px){
 
      /* cover */
@@ -615,4 +623,119 @@
        flex-basis: calc(100% / 4);
      }
 
+  }
+
+
+  /* media query sm */
+  @media screen and (max-width: 767px) {
+
+    /* cover */
+    .cover-item ul li {
+      flex-basis: calc(100% / 2);
+    }
+
+    /* player */
+    .player-item.left .player-album-icon {
+      flex-basis: 20%;
+    }
+
+  }
+
+  /* media query xs */
+  @media screen and (max-width: 599px) {
+
+    /* menu di navigazione */
+    nav {
+      width: 50px;
+    }
+
+    .nav-menu span {
+      display: none;
+    }
+
+    .nav-menu ul li {
+      padding: 0;
+    }
+
+    .nav-menu {
+      display: flex;
+      flex-direction: column;
+      align-items: center;
+      height: calc(100% - 80px);
+    }
+
+    .nav-menu .active {
+      border: none;
+    }
+
+    .logo {
+      padding: 6px;
+    }
+
+    .logo-small-container {
+      display: flex;
+      justify-content: center;
+    }
+
+    .logo-small {
+      width: 85%;
+    }
+
+    .logo-big-container {
+      display: none;
+    }
+
+    .playlist {
+      display: none;
+    }
+
+    .profile {
+      padding: 0;
+    }
+
+    .profile span, .profile h3 {
+      display: none;
+    }
+
+    .download {
+      border: none;
+      display: flex;
+      justify-content: center;
+    }
+
+    .download img {
+      margin: 0;
+    }
+
+    .utente {
+      display: flex;
+      justify-content: center;
+    }
+
+    .profile-container {
+      margin-right: 0;
+      margin-bottom: 5px;
+    }
+
+
+
+    /* call to action */
+    .call-to-action {
+      width: calc(100% - 50px);
+    }
+
+    /* cover */
+    #cover {
+      width: calc(100% - 50px);
+      margin-left: 50px;
+    }
+
+    /* player */
+    .player-item.left .player-album-icon {
+      text-align: left;
+    }
+
+    .player-album-icon a:last-child {
+      margin: 0;
+    }
   }
