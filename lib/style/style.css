@@ -17,7 +17,7 @@
   nav {
     width: 230px;
     border: solid 1px black;
-    background-color: darkred;
+    background-color: #000;
     height: calc(100vh - 90px);
     position: fixed;
     left: 0;
@@ -27,10 +27,7 @@
   .flex-nav {
     display: flex;
     flex-direction: column;
-  }
-
-  .logo, .nav-menu, .playlist, .profile {
-    border: solid 1px white;
+    height: 100%;
   }
 
   .logo {
@@ -79,6 +76,11 @@
 
   .nav-menu ul li {
     padding-left: 20px;
+  }
+
+  .playlist {
+    height: calc(100% - 80px);
+    overflow: hidden;
   }
 
   .playlist h3 {
@@ -131,6 +133,71 @@
 
   .playlist a:hover:before {
     background-color: rgba(255, 255, 255, 1);
+  }
+
+  .profile {
+    display: flex;
+    flex-direction: column;
+    padding-right: 20px;
+    padding-left: 20px;
+    min-height: 80px;
+    justify-content: flex-end;
+    margin-bottom: 5px;
+  }
+
+  .download {
+    padding-bottom: 10px;
+    border-bottom: solid 1px rgba(255, 255, 255, .4);
+  }
+
+  .download a {
+    text-decoration: none;
+    display: flex;
+    align-items: center;
+  }
+
+  .download img {
+    height: 16px;
+    opacity: .8;
+    margin-right: 8px;
+  }
+
+  .download span {
+    color: rgba(255, 255, 255, .4);
+    text-decoration: none;
+    font-size: 13px;
+  }
+
+  .download a:hover img {
+    opacity: 1;
+  }
+
+  .download a:hover span {
+    color: rgba(255, 255, 255, 1);
+  }
+
+  .utente {
+    display: flex;
+    align-items: center;
+    margin-top: 10px;
+  }
+
+  .utente h3 {
+    color: #fff;
+    font-size: 14px;
+  }
+
+  .profile-container {
+    width: 25px;
+    height: 25px;
+    background: grey;
+    border-radius: 100%;
+    overflow: hidden;
+    margin-right: 10px;
+  }
+
+  .profile-container img {
+    width: 100%;
   }
 
   /* fine regole menu di navigazione */
@@ -213,6 +280,7 @@
     display: block;
     position: absolute;
     left: 50%;
+    bottom: -2px;
     transform: translate(-50%);
   }
 
@@ -316,6 +384,7 @@
     background-color: lightblue;
     position: fixed;
     bottom: 0;
+    right: 0;
     z-index: 100;
     width: 100%;
   }
