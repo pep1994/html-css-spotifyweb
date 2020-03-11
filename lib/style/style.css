@@ -8,6 +8,7 @@
 
 .flex-container {
   display: flex;
+  margin-bottom: 90px;
 }
 
 /******* regole contenuto principale ********/
@@ -16,12 +17,12 @@
   /* inizio regole menu di navigazione */
   nav {
     width: 230px;
-    border: solid 1px black;
     background-color: #000;
     height: calc(100vh - 90px);
     position: fixed;
     left: 0;
     z-index: 99;
+    flex-shrink: 0;
   }
 
   .flex-nav {
@@ -253,6 +254,7 @@
     display: flex;
     justify-content: center;
     list-style-type: none;
+    flex-wrap: wrap;
   }
 
   .cover-menu .nav li {
@@ -291,10 +293,12 @@
   .cover-item ul {
     display: flex;
     list-style: none;
+    flex-wrap: wrap;
   }
 
   .cover-item ul li {
     flex-basis: calc(100% / 6);
+    flex-shrink: 0;
     padding-right: 15px;
     cursor: pointer;
   }
@@ -354,11 +358,11 @@
   #cover h5 {
     color: rgba(255, 255, 255, .4);
     line-height: 30px;
-    margin-bottom: 30px;
+    margin-bottom: 25px;
   }
 
   .cover-item.third .cover-sing {
-    margin-bottom: 120px;
+    margin-bottom: 20px;
   }
 
   .cover-item.third .img-container {
@@ -374,6 +378,8 @@
   }
 
   /* fine regole sezione cover */
+
+/****** fine contenuto principale *******/
 
 
   /* inizio regole player */
@@ -595,6 +601,18 @@
   .big-lenght .volume-bar:hover .point-volume {
     display: block;
   }
-
-
   /* fine regole player */
+
+  /* media query */
+  @media screen and (max-width: 991px){
+
+     /* cover */
+     .cover-menu .nav {
+       line-height: 35px;
+     }
+
+     .cover-item ul li {
+       flex-basis: calc(100% / 4);
+     }
+
+  }
