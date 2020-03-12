@@ -1,4 +1,4 @@
-/* regole generali */
+/* inizio regole generali */
 * {
   padding: 0;
   margin: 0;
@@ -8,8 +8,9 @@
 
 .flex-container {
   display: flex;
-  margin-bottom: 90px;
 }
+/* fine regole generali */
+
 
 /******* regole contenuto principale ********/
 
@@ -19,9 +20,6 @@
     width: 230px;
     background-color: #000;
     height: calc(100vh - 90px);
-    position: fixed;
-    left: 0;
-    z-index: 99;
     flex-shrink: 0;
   }
 
@@ -204,7 +202,6 @@
   .profile-container img {
     width: 100%;
   }
-
   /* fine regole menu di navigazione */
 
 
@@ -238,19 +235,15 @@
     border: solid 1px #fff;
     border-radius: 20px;
   }
-
   /* fine regole parte call to action */
 
 
   /* inizio regole sezione cover */
   #cover {
     background: #141922;
-    width: calc(100% - 230px);
-    margin-left: 230px;
     padding: 0 20px;
     height: calc(100vh - 90px);
     overflow: auto;
-
   }
 
   .cover-menu {
@@ -346,7 +339,7 @@
     margin-top: 10px;
   }
 
-   .cover-title h2 {
+  .cover-title h2 {
     font-size: 24px;
     color: #fff;
     font-weight: bold;
@@ -384,22 +377,15 @@
   .cover-item.third .img-container img {
     border-radius: 100%;
   }
-
   /* fine regole sezione cover */
 
 /****** fine contenuto principale *******/
 
 
   /* inizio regole player */
-
   .player {
     height: 90px;
     background-color: #282828;
-    position: fixed;
-    bottom: 0;
-    right: 0;
-    z-index: 100;
-    width: 100%;
   }
 
   .flex-player {
@@ -611,7 +597,11 @@
   }
   /* fine regole player */
 
-  /* media query md */
+
+
+/************************* media query *******************************/
+
+  /************** inizio media query md **************/
   @media screen and (max-width: 991px){
 
      /* cover */
@@ -630,9 +620,10 @@
      }
 
   }
+  /************* fine media query md ***************/
 
 
-  /* media query sm */
+  /************** inizio media query sm *************/
   @media screen and (max-width: 767px) {
 
     /* cover */
@@ -640,10 +631,12 @@
       flex-basis: calc(100% / 2);
     }
 
+
     /* player */
     .player-item.left .player-album-icon {
       flex-basis: 20%;
     }
+
 
     /* bonus */
     #cover .cover-item.first .cover-sing ul li:nth-child(3),
@@ -652,8 +645,10 @@
     }
 
   }
+  /************* fine media query sm **************/
 
-  /* media query xs */
+
+  /*************** inizio media query xs ****************/
   @media screen and (max-width: 599px) {
 
     /* menu di navigazione */
@@ -730,17 +725,11 @@
     }
 
 
-
     /* call to action */
     .call-to-action {
       width: calc(100% - 50px);
     }
 
-    /* cover */
-    #cover {
-      width: calc(100% - 50px);
-      margin-left: 50px;
-    }
 
     /* player */
     .player-item.left .player-album-icon {
@@ -800,6 +789,8 @@
     }
 
   }
+  /***************** fine media query xs ****************/
+
 
 
   /* bonus call to action */
