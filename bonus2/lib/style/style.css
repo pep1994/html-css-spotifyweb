@@ -59,27 +59,27 @@ header a {
 /* inizio contenuto principale */
 
 main {
-  height: calc(100vh - 80px);
-  background-color: lightblue;
-  overflow: auto;
-  padding-top: 80px;
+  background: red;
 }
 
 .container {
-  background-color: darkorange;
-  padding: 7px 50px;
+  height: calc(100vh - 160px);
+  background-color: green;
   display: flex;
   flex-wrap: wrap;
+  overflow: auto;
+  margin-top: 80px;
+  padding: 5px 50px;
 }
 
 .item {
   background: url(../../img/profile.png) no-repeat;
   background-size: cover;
   background-position: center 0px;
-  height: 175px;
+  height: calc((100% / 5) - .5%);
   padding-right: 5px;
   flex: 1 1 calc((100% /4) - .4%);
-  margin: .2%;
+  margin: 0 .2%;
 }
 /* fine contenuto principale */
 
@@ -107,26 +107,31 @@ footer {
 .footer-item.left {
   display: flex;
   align-items: center;
-
+  flex-basis: 25%;
 }
 
 .footer-item.center {
   display: flex;
   align-items: center;
   justify-content: center;
-
+  flex-basis: 50%;
 }
 
 .footer-item.right {
   display: flex;
   align-items: center;
   justify-content: flex-end;
+  flex-basis: 25%;
 }
 
 .footer-item i {
   color: #fff;
   font-size: 22px;
   cursor: pointer;
+}
+
+.footer-item .green {
+  color: #54C035;
 }
 
 .footer-item .arrow {
@@ -151,3 +156,41 @@ footer {
   padding-right: 8px;
 }
 /* fine footer */
+
+
+/* media query */
+
+/* media query md */
+@media all and (max-width: 1199px) {
+
+  .item {
+    flex: 0 1 calc((100% /3) - .4%);
+  }
+
+}
+
+
+/* media query xs */
+@media all and (max-width: 767px) {
+
+  .item {
+    flex: 1 1 calc((100% /2) - 2%);
+    margin: 1%;
+  }
+
+  .footer-item i {
+    font-size: 12px;
+  }
+
+  h3 {
+    font-size: 10px;
+  }
+
+  .quit a {
+    font-size: 10px;
+  }
+
+  .container {
+    padding: 7px 10px;
+  }
+}
