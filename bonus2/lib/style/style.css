@@ -165,6 +165,7 @@ footer {
 
   .item {
     flex: 0 1 calc((100% /3) - .4%);
+    margin: .2% .2%;
   }
 
 }
