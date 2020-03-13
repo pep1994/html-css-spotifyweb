@@ -39,10 +39,12 @@ main {
 
 .item {
   border: solid 1px black;
-  background-color: darkgoldenrod;
-  height: 70px;
+  background: url(../../img/profile.png) no-repeat;
+  background-size: cover;
+  background-position: center 0px;
+  height: 200px;
   padding-right: 5px;
-  flex: 1 1 25%;
+  flex: 1 1 calc(100% / 5);
 }
 /* fine contenuto principale */
 
