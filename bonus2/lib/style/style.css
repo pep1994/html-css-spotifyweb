@@ -12,13 +12,11 @@ h3 {
   font-weight: normal;
 }
 
+
 /* inizio header */
 header {
   height: 80px;
   background-color: #000;
-  position: fixed;
-  top: 0;
-  width: 100%;
 }
 
 header::after {
@@ -49,26 +47,22 @@ header a {
   border-radius: 7px;
   margin-right: 5px;
 }
-
-
-
-
-
 /* fine header */
+
 
 /* inizio contenuto principale */
 
 main {
-  background: red;
+  background: #000;
+  padding-bottom: 10px;
 }
 
 .container {
-  height: calc(100vh - 160px);
-  background-color: green;
+  height: calc(100vh - 170px);
+  background-color: #000;
   display: flex;
   flex-wrap: wrap;
   overflow: auto;
-  margin-top: 80px;
   padding: 5px 50px;
 }
 
@@ -76,16 +70,13 @@ main {
   background: url(../../img/profile.png) no-repeat;
   background-size: cover;
   background-position: center 0px;
-  height: calc((100% / 5) - .5%);
+  min-height: 180px;
   padding-right: 5px;
   flex: 1 1 calc((100% /4) - .4%);
-  margin: 0 .2%;
+  margin: .2%;
 }
 /* fine contenuto principale */
 
-
-
-/* fine contenuto principale */
 
 /* inizio footer */
 footer {
@@ -165,7 +156,6 @@ footer {
 
   .item {
     flex: 0 1 calc((100% /3) - .4%);
-    margin: .2% .2%;
   }
 
 }
@@ -173,6 +163,10 @@ footer {
 
 /* media query xs */
 @media all and (max-width: 767px) {
+
+  header a {
+    font-size: 10px;
+  }
 
   .item {
     flex: 1 1 calc((100% /2) - 2%);
@@ -194,4 +188,5 @@ footer {
   .container {
     padding: 7px 10px;
   }
+  
 }
