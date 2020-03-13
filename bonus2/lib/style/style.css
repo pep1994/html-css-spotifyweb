@@ -1,0 +1,59 @@
+/* regole generali */
+* {
+  padding: 0;
+  margin: 0;
+  box-sizing: border-box;
+}
+
+/* inizio header */
+header {
+  border: solid 1px black;
+  height: 100px;
+  background-color: darkred;
+  position: fixed;
+  top: 0;
+  width: 100%;
+}
+
+
+
+/* fine header */
+
+/* inizio contenuto principale */
+
+main {
+  height: calc(100vh - 100px);
+  border: solid 1px black;
+  background-color: lightblue;
+  overflow: auto;
+  padding-top: 110px;
+}
+
+.container {
+  background-color: darkorange;
+  border: solid 1px black;
+  padding: 0 50px;
+  display: flex;
+  flex-wrap: wrap;
+}
+
+.item {
+  border: solid 1px black;
+  background-color: darkgoldenrod;
+  height: 70px;
+  padding-right: 5px;
+  flex: 1 1 25%;
+}
+/* fine contenuto principale */
+
+
+
+/* fine contenuto principale */
+
+/* inizio footer */
+footer {
+  height: 100px;
+  border: solid 1px black;
+  background-color: darkgreen;
+}
+/* fine footer */
